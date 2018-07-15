@@ -10,6 +10,7 @@ import android.webkit.WebResourceRequest;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
+import com.codepath.newyorktimesarticlesearch.Article;
 import com.codepath.newyorktimesarticlesearch.R;
 
 public class ArticleActivity extends AppCompatActivity {
@@ -21,7 +22,7 @@ public class ArticleActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        String url = getIntent().getStringExtra("url");
+        Article article = (Article) getIntent().getSerializableExtra("article");
 
         WebView webView = (WebView) findViewById(R.id.wvArticle);
 
@@ -33,7 +34,7 @@ public class ArticleActivity extends AppCompatActivity {
                 return true;
             }
         });
-        webView.loadUrl(url);
+        webView.loadUrl(article.getWebUrl());
     }
 
 }
