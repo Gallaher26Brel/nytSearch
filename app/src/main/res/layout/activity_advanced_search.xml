@@ -5,22 +5,40 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activities.AdvancedSearchActivity">
-
+<LinearLayout
+    android:layout_width="match_parent"
+    android:gravity="top">
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="88dp"
-        android:layout_height="43dp"
+        android:id="@+id/txtDate"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
         android:text="@string/adv_search_date_txt"
-        android:layout_alignParentLeft="true" />
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp" />
 
-    <DatePicker
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:endYear="2019"
-        android:startYear="2016"
-        android:orientation="vertical"
-        >
-    </DatePicker>
+    <EditText
+        android:id="@+id/etDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/txtDate"
+        android:layout_toEndOf="@+id/txtDate"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:layout_toRightOf="@+id/txtDate" />
+</LinearLayout>
+
+
+    <!--<DatePicker-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:endYear="2019"-->
+        <!--android:startYear="2016"-->
+        <!--android:orientation="vertical"-->
+        <!--&gt;-->
+    <!--</DatePicker>-->
 </RelativeLayout>
