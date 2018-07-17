@@ -50,6 +50,8 @@ public class SearchActivity extends AppCompatActivity {
 
         // added
         setupViews();
+//        getActionBar().setTitle("Articles search"); //problematic code?
+//        getSupportActionBar().setTitle("Articles search");
     }
 
     public void setupViews(){

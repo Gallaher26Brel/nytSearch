@@ -2,9 +2,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.codepath.newyorktimesarticlesearch.activities.SearchActivity">
+
+    <item
+        android:id="@+id/action_filter"
+        android:icon="?android:attr/actionModeFindDrawable"
+        android:title="@string/action_filter"
+        app:showAsAction="ifRoom" />
     <item
         android:id="@+id/action_settings"
         android:orderInCategory="100"
-        android:title="@string/action_settings"
+        android:title="@string/action_advanced_search"
         app:showAsAction="never" />
 </menu>
